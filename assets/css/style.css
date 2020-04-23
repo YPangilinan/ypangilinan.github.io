@@ -40,9 +40,10 @@ body{
 }
 
 nav{
+    position:static;
     float:right;
     margin-top:25px;
-    margin-right:300px;
+    margin-right:25px;
     color:#777777;
 }   
 
@@ -192,4 +193,78 @@ input[type=submit] {
     text-align:center;
     border-bottom:0;
     background:#4aaaa5;
+}
+
+@media screen and (max-width:980px){
+    #mainwrapper{
+        max-width:100%;
+        margin-left:50px;
+        margin-right:200px;
+    }
+    #mainhead{
+        max-width:100%;
+        float: left;
+
+    }
+    .username{
+        width:390px;
+        margin-left:25px;
+        margin-right:0px;
+    }
+    nav{
+        position:fixed;
+        margin-top:0px;
+        margin-left:500px;
+        margin-top:25px;
+    }
+}
+
+@media screen and (max-width:768px){
+    #mainwrapper{
+        max-width:100%;
+        margin-right:50px;
+
+    }
+    #mainhead{
+        max-width:100%;
+
+    }
+    .username{
+        margin-top:0;
+        padding:.60em;
+        text-align:center;
+    }
+    nav{
+        position:fixed;
+        margin-top:0px;
+        margin-left:420px;
+        margin-top:25px;
+    }
+}
+
+@media screen and (max-width:640px){
+    #mainwrapper{
+        max-width:100%;
+        margin-left:50px;
+        margin-right:50px;
+    }
+    #mainhead{
+        max-width:100%;
+        float:left;
+
+    }
+    .username{
+        position:static;
+        width:100%;
+        margin-left:0px;
+    }
+
+    nav{
+        width:100%;
+        position:relative;
+        text-align:center;
+        display:inline-block;
+        margin-left:20px;
+    }
+    
 }
